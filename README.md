@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/really-simple.svg)](https://badge.fury.io/rb/really-simple)
+
 # Really Simple.
 
 Really Simple is a really simple [Jekyll](https://jekyllrb.com) theme. It is barebones and is meant to get a site with blogging up very quickly. The Really Simple design is basic yet esthetically pleasing. In other words it's good enough for an MVP.
@@ -21,10 +23,11 @@ In your `Gemfile` add the line:
  gem 'really-simple'
 ```
 
-In your `_config.yml` file specify the theme:
+In your `_config.yml` file specify the theme and title:
 
 ```yml
 theme: really-simple
+title: Your Title
 ```
 
 And then execute:
