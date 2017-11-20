@@ -119,3 +119,10 @@ table {
     border: 1px solid #eee;
   }
 }
+
+blockquote {
+   color: #999;
+   border-left: 5px solid #eee;
+   padding: 10px 10px 10px 20px;
+   background: lighten(#999, 37%);
+}
