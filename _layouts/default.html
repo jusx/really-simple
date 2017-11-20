@@ -7,21 +7,17 @@
    <link rel="stylesheet" href="{{ "assets/main.css" | relative_url }}">
 </head>
 <body>
-<div class="content">
-   <div class="header">
-      <a class="title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-      <span class="nav">&raquo; <a href="{{ "archives" | relative_url }}">archives</a> &nbsp;&raquo; <a href="{{ "about" | relative_url }}">about</a></span>
+   <div class="content">
+      <div class="header">
+         <a class="title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+         <span class="nav">&raquo; <a href="{{ "archives" | relative_url }}">archives</a> &nbsp;&raquo; <a href="{{ "about" | relative_url }}">about</a></span>
+      </div>
+
+      {{ content }}
+
+      <div class="footer">
+         All Rights Reserved &copy; 2017 {{ site.title | escape }}
+      </div>
    </div>
-
-   {{ content }}
-
-   <div class="footer">
-      All Rights Reserved &copy; 2017 {{ site.title | escape }}
-   </div>
-
-
-
-</div>
-
 </body>
 </html>
