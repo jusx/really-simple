@@ -50,9 +50,9 @@ Alternately you can simply fork this repo and go from there.
 
 - Really Simple will display up to three posts fully on the home page.
 
-- Link to archives in the header and at the end of the home page will only display when there are more than 3 posts that exists in `_posts`
+- Link to archives in the header and at the end of the home page will only display when there are more than 3 posts.
 
-- The header has two links: `Archives` and `About`. Really Simple expects these files to be in the root project folder. The `jekyll new` command will create a dummy `about.md` file in the root folder. Remove the layout metadata so that the default template is used.
+- The header has two links: `Archives` and `About`. Really Simple expects these files to be in the root project folder. The `jekyll new` command will create a dummy `about.md` file in the root folder. Remove the layout metadata so that the Really Simple default template is used.
 
 ## Contributions
 Bug reports and pull requests are most welcome.
