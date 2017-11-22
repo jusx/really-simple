@@ -42,7 +42,7 @@ jobs:
           command: |
             mkdir /tmp/test-results
 
-            bundle exec jekyll build .
+            bundle exec jekyll build
             gem build really-simple.gemspec
 
       # collect reports
