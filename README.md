@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/jusx/really-simple/tree/master.svg?style=shield)](https://circleci.com/gh/jusx/really-simple/tree/master)
 [![Gem Version](https://badge.fury.io/rb/really-simple.svg)](https://badge.fury.io/rb/really-simple)
 
 # Really Simple.
