@@ -21,5 +21,7 @@ layout: default
     {% endfor %}
   </ul>
 
+  {% if site.posts.size > 3 %}
   <a class="post-link" href="{{ "pages/archives" | relative_url }}">More...</a>
+  {% endif %}
 </div>
