@@ -7,6 +7,8 @@ Really Simple is a really simple [Jekyll](https://jekyllrb.com) theme. It is bar
 
 There are no bells and no whistles. Those can be added later -- when the author is ready.
 
+Preview the theme to [see what it looks like](https://jusx.github.io/really-simple/).
+
 ## The Story
 
 I had been struggling to find a a really simple Jekyll theme that supported blogging out of the box. It was either esthetically not pleasing to me or that it had too many bells and whistles forcing me to think about things I did not wish to have to think about immediately. I just wanted to launch.
