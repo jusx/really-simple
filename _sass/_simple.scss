@@ -38,11 +38,13 @@ body {
    padding-bottom: 20px;
    border-top: 1px solid #ddd;
    margin-top: 70px;
+   font-size: 0.8em;
 }
 
 .content {
   width: 70%;
   margin: 0 auto;
+  font-size: 1.1em;
 
   h1, h2, h3, h4, h5, h6 {
      font-family: "Lucida Grande", verdana, 'Lato', sans-serif;
@@ -80,14 +82,16 @@ body {
 
 .post-content {
    line-height: 1.5em;
-   a {
-      color:#111;
-      color: #0090B2;
-      text-decoration:none;
 
-      &:hover {
-        color: #FF7A00;
-      }
+}
+
+a {
+   color:#111;
+   color: #0090B2;
+   text-decoration:none;
+
+   &:hover {
+     color: #FF7A00;
    }
 }
 

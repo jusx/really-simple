@@ -1,2 +1,2 @@
 # About
-Something about yourself.
+Something about [yourself](/).
