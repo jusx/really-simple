@@ -94,6 +94,10 @@ blockquote {
      font-family: "Lucida Grande", verdana, 'Lato', sans-serif;
      color: lighten($content-text-color, 10%);
   }
+
+  img {
+     width: 100%;
+  }
 }
 
 .post-list {
