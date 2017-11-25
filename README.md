@@ -20,11 +20,10 @@ In your `Gemfile` add the line:
  gem 'really-simple'
 ```
 
-In your `_config.yml` file specify the theme and title:
+In your `_config.yml` file specify the theme:
 
 ```yml
 theme: really-simple
-title: Your Title
 ```
 
 And then execute:
