@@ -1,7 +1,7 @@
 // all the base.
 body {
    font-family: Georgia, Cambria, 'Josefin Slab';
-   color: $primary-text-color;
+   color: $content-text-color;
 }
 
 a {
@@ -48,14 +48,14 @@ blockquote {
 
 // all the layout.
 .header {
-   color: $normal-nav-color;
+   color: $header-text-color;
    padding-top: 20px;
    padding-bottom: 20px;
 
    .title {
       font-size:1.5em;
       text-decoration: none;
-      color: $normal-nav-color;
+      color: $header-text-color;
    }
 
    .nav {
@@ -66,21 +66,21 @@ blockquote {
       white-space: nowrap;
 
       a {
-         color: $normal-nav-color;
+         color: $header-text-color;
          text-decoration: none;
 
          &:hover {
-            color: darken($normal-nav-color, 20%);
+            color: darken($header-text-color, 20%);
          }
       }
    }
 }
 
 .footer {
-   color: $normal-footer-color;
+   color: $footer-text-color;
    padding-top: 20px;
    padding-bottom: 20px;
-   border-top: 1px solid lighten($normal-footer-color, 30%);
+   border-top: 1px solid lighten($footer-text-color, 30%);
    margin-top: 70px;
    font-size: 0.8em;
 }
@@ -92,7 +92,7 @@ blockquote {
 
   h1, h2, h3, h4, h5, h6 {
      font-family: "Lucida Grande", verdana, 'Lato', sans-serif;
-     color: lighten($primary-text-color, 10%);
+     color: lighten($content-text-color, 10%);
   }
 }
 
@@ -109,18 +109,18 @@ blockquote {
 }
 
 .post-meta {
-   color: lighten($primary-text-color,40%);
+   color: lighten($content-text-color,40%);
    font-size: 0.9em;
 }
 
 .post-title { margin-bottom: 5px; }
 
 .post-link {
-   color: $normal-post-link-color;
+   color: $post-link-color;
    text-decoration: none;
 
    &:hover {
-      color: darken($normal-post-link-color, 10%);
+      color: darken($post-link-color, 10%);
    }
 }
 
