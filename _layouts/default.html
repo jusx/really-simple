@@ -7,11 +7,12 @@
    <link rel="stylesheet" href="{{ "assets/main.css" | relative_url }}">
 </head>
 <body>
+   {% assign post_limit = site.post_limit | default: 3 %}
    <div class="content">
       <div class="header">
          <a class="title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
          <span class="nav">
-            {% if site.posts.size > 3 %}
+            {% if site.posts.size > post_limit %}
             &raquo; <a href="{{ "archives" | relative_url }}">archives</a>
             {% endif %}
             &nbsp;&raquo; <a href="{{ "about" | relative_url }}">about</a>

@@ -1,4 +1,6 @@
-title: Really Simple
+title: Really Simple # Title of site.
+post_limit: 3  # Number of posts to display on the home page.
+
 timezone: America/Los_Angeles
 
 sass:

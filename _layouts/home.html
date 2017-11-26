@@ -7,7 +7,8 @@ layout: default
   {{ content }}
 
   <ul class="post-list">
-    {% for post in site.posts limit:3 %}
+    {% assign post_limit = site.post_limit | default: 3 %}
+    {% for post in site.posts limit: post_limit %}
       <li>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         <h1 class="post-title">
@@ -21,7 +22,7 @@ layout: default
     {% endfor %}
   </ul>
 
-  {% if site.posts.size > 3 %}
+  {% if site.posts.size > post_limit %}
   <a class="post-link" href="{{ "archives" | relative_url }}">More...</a>
   {% endif %}
 </div>

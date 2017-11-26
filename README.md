@@ -20,11 +20,10 @@ In your `Gemfile` add the line:
  gem 'really-simple'
 ```
 
-In your `_config.yml` file specify the theme and title:
+In your `_config.yml` file specify the theme:
 
 ```yml
 theme: really-simple
-title: Your Title
 ```
 
 And then execute:
@@ -45,7 +44,22 @@ Alternately you can simply fork this repo and go from there.
 
 ## Customization
 
-The color palette can be customized by changing the rgb in `_sass/_colors.scss`. If using the gem, merely create the file `_colors.scss` under the folder `_sass` and set the colors appropriately. Here's an example:
+### Configuration
+
+The following settings are configurable in `_config.yml`:
+
+- **Title** - Title of your site. This is used in the header and footer.
+- **Post Limit** - The number of posts to show on the home page. Link to archives in the header and at the end of the home page will only display based on this setting. When this is not specified, Really Simple defaults the limit to 3.
+
+Here's an example:
+
+```yml
+title: Really Simple # Title of site.
+post_limit: 3  # Number of posts to display on the home page.
+```
+
+### Colors
+The color palette can be changed and configured by changing the rgb in `_sass/_colors.scss`. If using the gem, merely create the file `_colors.scss` under the folder `_sass` and set the colors appropriately. Here's an example:
 
 ```scss
 $header-text-color: #ee4035;
@@ -64,6 +78,7 @@ $code-bg-color: #fdf498;
 The above will render the palette like so:
 
 ![Screenshot of customized colors](really-simple-rainbow-pallete.png)
+
 
 ## Details
 
