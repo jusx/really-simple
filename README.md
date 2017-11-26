@@ -82,9 +82,7 @@ The above will render the palette like so:
 
 ## Details
 
-- Really Simple will display up to three posts fully on the home page.
-
-- Link to archives in the header and at the end of the home page will only display when there are more than 3 posts.
+- Link to archives in the header and at the end of the home page will only display when there are more than  post limit configured (or the default of 3 if it is not configured).
 
 - The header has two links: `Archives` and `About`. Really Simple expects these files to be in the root project folder. The `jekyll new` command will create a dummy `about.md` file in the root folder. Remove the layout metadata so that the Really Simple default template is used.
 
