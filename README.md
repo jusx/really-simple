@@ -48,14 +48,16 @@ Alternately you can simply fork this repo and go from there.
 
 The following settings are configurable in `_config.yml`:
 
-- **Title** - Title of your site. This is used in the header and footer.
-- **Post Limit** - The number of posts to show on the home page. Link to archives in the header and at the end of the home page will only display based on this setting. When this is not specified, Really Simple defaults the limit to 3.
+- `title` - Title of your site. This is used in the header and footer.
+- `post_limit` - The number of posts to show on the home page. Link to archives in the header and at the end of the home page will only display based on this setting. When this is not specified, Really Simple defaults the limit to 3.
+- `google_analytics` - The google analytics Tracking ID. When specified, the appropriate script is included in the header.
 
 Here's an example:
 
 ```yml
 title: Really Simple # Title of site.
 post_limit: 3  # Number of posts to display on the home page.
+google_analytics: UA-111111111-1 # Google Analytics Tracking ID.
 ```
 
 ### Colors
