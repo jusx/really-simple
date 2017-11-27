@@ -1,5 +1,13 @@
 title: Really Simple # Title of site.
 post_limit: 3  # Number of posts to display on the home page.
+# post_excerpt:
+#    show: true # Show excerpts of posts when true instead of entire posts on home page.
+#    caption: "More..."
+post_excerpt:
+   show: true
+   more_caption: "Keep reading..."
+
+# archives_link_caption: More Posts
 
 timezone: America/Los_Angeles
 
