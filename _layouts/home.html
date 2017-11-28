@@ -9,20 +9,24 @@ layout: default
   <ul class="post-list">
     {% assign post_limit = site.post_limit | default: 3 %}
     {% for post in site.posts limit: post_limit %}
+
       <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+      {% if site.post_excerpt.show %}
+         {% include post_excerpt.html %}
+      {% else %}
         <h1 class="post-title">
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
        </h1>
-        <span class="post-meta">posted on {{ post.date | date: date_format }}</span>
+        <span class="post-meta">posted on {{ post.date | date: "%b %-d, %Y" }}</span>
         <div class="post-content">
-           {{ post.content }}
+            {{ post.content }}
         </div>
       </li>
+      {% endif %}
     {% endfor %}
   </ul>
 
   {% if site.posts.size > post_limit %}
-  <a class="post-link" href="{{ "archives" | relative_url }}">More...</a>
+  <p class="home-footer"><a class="post-link home-footer-archive-link" href="{{ "archives" | relative_url }}">{{ site.archives_link_caption | default: "Browse Archives &gt;" }}</a></p>
   {% endif %}
 </div>

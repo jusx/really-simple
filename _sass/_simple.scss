@@ -112,14 +112,14 @@ blockquote {
 
 }
 
-.post-meta {
+.post-meta, .post-excerpt-meta {
    color: lighten($content-text-color,40%);
    font-size: 0.9em;
 }
 
-.post-title { margin-bottom: 5px; }
+.post-title, .post-excerpt-title { margin-bottom: 5px; }
 
-.post-link {
+.post-link, .post-excerpt-link {
    color: $post-link-color;
    text-decoration: none;
 
@@ -128,7 +128,26 @@ blockquote {
    }
 }
 
-.post-content {
+.post-content, .post-excerpt-content {
    line-height: 1.5em;
+}
 
+.post-excerpt-title {
+   font-size: 1.3em;
+}
+
+.home-footer-archive-link {
+   border:1px solid lighten($post-link-color, 30%);
+   padding: 7px;
+   border-radius: 5px;
+
+   &:hover {
+      border:1px solid darken($post-link-color, 10%);
+      background: $post-link-color;
+      color: lighten($post-link-color, 45%);
+   }
+}
+
+.home-footer {
+   text-align: center;
 }
