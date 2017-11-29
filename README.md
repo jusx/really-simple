@@ -52,7 +52,7 @@ The following settings are configurable in `_config.yml`:
 
 - `post_limit` - The number of posts to show on the home page. Link to archives in the header and at the end of the home page will only display based on this setting. When this is not specified, Really Simple defaults the limit to 3.
 
-- `post_excerpt` - When the `show` property for `post_excerpt` is set to true the home page will display only the post excerpt of each post. The `caption` property allows customization of the "more" link under the post excerpt. See example below.
+- `post_excerpt` - When the `active` property for `post_excerpt` is set to true the home page will display only the post excerpt of each post. The `caption` property allows customization of the "more" link under the post excerpt. See example below.
 
 - `google_analytics` - The google analytics Tracking ID. When specified, the appropriate script is included in the header.
 
@@ -65,7 +65,7 @@ title: Really Simple # Title of site.
 post_limit: 3  # Number of posts to display on the home page.
 google_analytics: UA-111111111-1 # Google Analytics Tracking ID.
 post_excerpt:
-    show: true # Show excerpts of posts when true instead of entire posts on home page.
+    active: true # Show excerpts of posts when true instead of entire posts on home page.
     caption: "More..." # Anchor text that links to the entire post.
 archives_link_caption: Browse Archives # Anchor text for the link to archives.    
 ```

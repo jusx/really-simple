@@ -11,7 +11,7 @@ layout: default
     {% for post in site.posts limit: post_limit %}
 
       <li>
-      {% if site.post_excerpt.show %}
+      {% if site.post_excerpt.active %}
          {% include post_excerpt.html %}
       {% else %}
         <h1 class="post-title">

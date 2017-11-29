@@ -5,6 +5,8 @@ sass:
    sass_dir: _sass
    style: :compressed
 
+repository: jusx/jusx.github.io
+
 exclude:
   - Gemfile
   - Gemfile.lock
