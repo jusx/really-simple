@@ -24,11 +24,14 @@
    <div class="content">
       <div class="header">
          <a class="title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
          <span class="nav">
-            {% if site.posts.size > post_limit %}
-            &raquo; <a href="{{ "archives" | relative_url }}">archives</a>
-            {% endif %}
-            &nbsp;&raquo; <a href="{{ "about" | relative_url }}">about</a>
+            <ul>
+               {% assign pages = site.pages | where: "menu_item", "true" %}
+               {% for page in pages %}
+                  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+               {% endfor %}
+            </ul>
          </span>
       </div>
 

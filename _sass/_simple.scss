@@ -60,17 +60,28 @@ blockquote {
 
    .nav {
       margin-top:5px;
-      margin-left:20px;
       font-size:1em;
-      float:right;
+      float: right;
       white-space: nowrap;
 
+      ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+      }
+
+      li {
+         display: inline;
+         margin-left:20px;
+      }
+
       a {
-         color: $header-text-color;
+         color: $header-nav-color;
          text-decoration: none;
 
          &:hover {
-            color: darken($header-text-color, 20%);
+            color: darken($header-nav-color, 20%);
+            text-decoration: underline;
          }
       }
    }
