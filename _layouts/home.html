@@ -26,7 +26,4 @@ layout: default
     {% endfor %}
   </ul>
 
-  {% if site.posts.size > post_limit %}
-  <p class="home-footer"><a class="post-link home-footer-archive-link" href="{{ "archives" | relative_url }}">{{ site.archives_link_caption | default: "Browse Archives &gt;" }}</a></p>
-  {% endif %}
 </div>
