@@ -81,15 +81,26 @@ The above will render the palette like so:
 
 ### Menu
 
-Any pages with the [front matter]
-(https://jekyllrb.com/docs/frontmatter/) property of `menu_item` set to true will be rendered as part of the menu in the header:
+The menu items are configuration driven. Any pages with the [front matter]
+(https://jekyllrb.com/docs/frontmatter/) property of `menu_item` set to true will be rendered as part of the menu in the header. For example the consider the following pages:
 
+`archives.md`:
 ```
 ---
+title: Archives
 permalink: archives
 menu_item: true
 ---
 ```
+`about.md`:
+```
+---
+title: About
+menu_item: true
+---
+```
+
+Will render the menu items "About" and "Archives."
 
 ### Layouts
 Really Simple comes with a simple layout for archives. Just include `layout: archives` front matter in your pages. You can find an example of this here.
