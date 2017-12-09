@@ -31,17 +31,6 @@ And then execute:
 $ bundle
 ```
 
-Now create or update your `archives.md` in the project root folder. Specify the archives layout:
-
-```
----
-layout: archives
----
-```
-Any content in this file will be included in the page.
-
-Alternately you can simply fork this repo and go from there.
-
 ## Customization
 
 ### Configuration
@@ -55,8 +44,6 @@ The following settings are configurable in `_config.yml`:
 - `post_excerpt` - When the `show` property for `post_excerpt` is set to true the home page will display only the post excerpt of each post. The `caption` property allows customization of the "more" link under the post excerpt. See example below.
 
 - `google_analytics` - The google analytics Tracking ID. When specified, the appropriate script is included in the header.
-
-- `archives_link_caption` - The anchor text for the link to archies.
 
 Here's an example:
 
@@ -75,6 +62,7 @@ The color palette can be changed and configured by changing the rgb in `_sass/_c
 
 ```scss
 $header-text-color: #ee4035;
+$header-nav-color: #0090B2;
 $content-text-color: #333;
 $footer-text-color: #ee4035;
 
@@ -91,12 +79,20 @@ The above will render the palette like so:
 
 ![Screenshot of customized colors](really-simple-rainbow-pallete.png)
 
+### Menu
 
-## Details
+Any pages with the [front matter]
+(https://jekyllrb.com/docs/frontmatter/) property of `menu_item` set to true will be rendered as part of the menu in the header:
 
-- Link to archives in the header and at the end of the home page will only display when there are more than  post limit configured (or the default of 3 if it is not configured).
+```
+---
+permalink: archives
+menu_item: true
+---
+```
 
-- The header has two links: `Archives` and `About`. Really Simple expects these files to be in the root project folder. The `jekyll new` command will create a dummy `about.md` file in the root folder. Remove the layout metadata so that the Really Simple default template is used.
+### Layouts
+Really Simple comes with a simple layout for archives. Just include `layout: archives` front matter in your pages. You can find an example of this here.
 
 ## Philosophy
 
