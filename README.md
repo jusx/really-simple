@@ -81,8 +81,7 @@ The above will render the palette like so:
 
 ### Menu
 
-The menu items are configuration driven. Any pages with the [front matter]
-(https://jekyllrb.com/docs/frontmatter/) property of `menu_item` set to true will be rendered as part of the menu in the header. For example the consider the following pages:
+The menu items are configuration driven. Any pages with the [front matter](https://jekyllrb.com/docs/frontmatter/) property of `menu_item` set to true will be rendered as part of the menu in the header. For example the consider the following pages:
 
 `archives.md`:
 ```
