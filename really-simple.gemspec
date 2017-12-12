@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "really-simple"
-  spec.version       = "0.3.0"
+  spec.version       = "1.0.0"
   spec.authors       = ["jusx"]
   spec.email         = ["hello@justinlaw.org"]
 
   spec.summary       = %q{ Really Simple Jekyll theme. Barebones to quickly launch a blog. }
-  spec.homepage      = "https://github.com/jusx/really-simple"
+  spec.homepage      = "https://github.com/jusx/really-simple/tree/1.0.0"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f|
