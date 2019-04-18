@@ -103,7 +103,7 @@ menu_item: true
 With the above pages, the menu items "About" and "Archives" will be rendered.
 
 ### Layouts
-Really Simple comes with a simple layout for archives. Just include `layout: archives` front matter in your pages.
+Really Simple comes with a simple layout for archives. Just include `layout: archives` in the front matter of your archive page [like this](https://raw.githubusercontent.com/jusx/really-simple/master/pages/archives.md).
 
 ## Philosophy
 
